@@ -1,0 +1,30 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# مجلد android/ يُنشأ تلقائيًا بالأمر tool/prepare_android.sh
+/android/
+/ios/
+/web/
+/linux/
+/macos/
+/windows/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# الخادم الوسيط
+backend/node_modules/
+backend/.wrangler/
+backend/.dev.vars
+
+# لا ترفع أبدًا لوائح تلاميذ حقيقية
+ListEleve_*.xlsx
