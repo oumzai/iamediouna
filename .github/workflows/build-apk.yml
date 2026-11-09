@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+      
     - name: Setup Java
       uses: actions/setup-java@v4
       with:
@@ -25,11 +25,13 @@ jobs:
         channel: 'stable'
         
     - name: Get dependencies
-    - run: flutter pub get
+      run: flutter pub get
+      
+    - name: Create Android files
+      run: flutter create .
       
     - name: Build APK
-    - run: flutter create .
-    - run: flutter build apk --release
+      run: flutter build apk --release
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
