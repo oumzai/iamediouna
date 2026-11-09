@@ -31,7 +31,7 @@ dependencies:
 
   # تسجيل صوت الأستاذ للأسئلة وتشغيله
   record: ">=6.0.0 <8.0.0"
-  audioplayers: ^6.5.0
+  audioplayers: ^5.2.1
 
   # الأمان والاتصال بالخادم الوسيط
   pointycastle: ">=3.9.0 <5.0.0"
