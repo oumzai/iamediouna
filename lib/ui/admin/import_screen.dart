@@ -75,7 +75,7 @@ class _ImportScreenState extends State<ImportScreen> {
               TextField(controller: first, decoration: const InputDecoration(labelText: 'الاسم')),
               const SizedBox(height: 8),
               DropdownButtonFormField<String>(
-                initialValue: gender,
+                value: gender,
                 decoration: const InputDecoration(labelText: 'النوع'),
                 items: const [
                   DropdownMenuItem(value: '', child: Text('غير محدد')),
