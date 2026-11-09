@@ -1,0 +1,10 @@
+name = "maktabati-ai"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+MODEL = "claude-sonnet-5-5"
+
+# المتغيرات السرية تُضاف بالأوامر (لا تكتبها هنا أبدًا):
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put ACCESS_TOKENS
