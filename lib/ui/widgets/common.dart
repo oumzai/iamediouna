@@ -198,7 +198,7 @@ class StatCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(14),
           child: Row(children: [
-            CircleAvatar(backgroundColor: color.withValues(alpha: 0.12), child: Icon(icon, color: color)),
+            CircleAvatar(backgroundColor: color.withOpacity(0.12), child: Icon(icon, color: color)),
             const SizedBox(width: 12),
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -243,7 +243,7 @@ class EmptyState extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(32),
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-            Icon(icon, size: 72, color: AppColors.muted.withValues(alpha: 0.5)),
+            Icon(icon, size: 72, color: AppColors.muted.withOpacity(0.5)),
             const SizedBox(height: 12),
             Text(text, textAlign: TextAlign.center, style: const TextStyle(fontSize: 17, color: AppColors.muted)),
             if (action != null) ...[const SizedBox(height: 16), action!],
