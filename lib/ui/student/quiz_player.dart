@@ -144,7 +144,7 @@ class _QuizPlayerScreenState extends State<QuizPlayerScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Material(
-        color: selected ? AppColors.student.withValues(alpha: 0.15) : Colors.white,
+        color: selected ? AppColors.student.withOpacity(0.15) : Colors.white,
         borderRadius: BorderRadius.circular(18),
         child: InkWell(
           borderRadius: BorderRadius.circular(18),
