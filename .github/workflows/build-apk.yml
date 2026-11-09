@@ -28,6 +28,7 @@ jobs:
       run: flutter pub get
       
     - name: Build APK
+      run: flutter create
       run: flutter build apk --release
       
     - name: Upload APK
