@@ -170,7 +170,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
                       for (final r in o.rows)
                         DataRow(
                           color: WidgetStatePropertyAll(
-                            (r.rank ?? 99) <= 3 ? AppColors.accent.withValues(alpha: 0.15) : null,
+                            (r.rank ?? 99) <= 3 ? AppColors.accent.withOpacity(0.15) : null,
                           ),
                           cells: [
                             DataCell(Text(r.rank == null ? '—' : '${r.rank}',
